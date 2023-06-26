@@ -1,4 +1,9 @@
-const Stacked = () => {
-  return <div>stacked</div>;
-};
-export default Stacked;
+import React from 'react'
+
+function Stacked() {
+  return (
+    <div>Stacked</div>
+  )
+}
+
+export default Stacked
