@@ -19,10 +19,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
       >
         <span style={{ background: dotColor }} 
           className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
-        >
+        />
           {icon}
-        
-        </span>
 
       </button>
 
@@ -35,6 +33,7 @@ const Navbar = () => {
   const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize } = useStateContext()
 
   useEffect(()=> {
+    //We want to figure out the window size initially when the window loads
     const handleResize = () => setScreenSize(window.innerWidth)
 
     window.addEventListener('resize', handleResize)
