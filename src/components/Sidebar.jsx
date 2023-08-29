@@ -45,7 +45,7 @@ const Sidebar = () => {
               <NavLink
                 to={`/${link.name}`}
                 key={link.name}
-                onClick={handleCloseSidebar}
+                onClick={ handleCloseSidebar }
                 className={( {isActive}) =>
               isActive ? activeLink : normalLink}
               >
